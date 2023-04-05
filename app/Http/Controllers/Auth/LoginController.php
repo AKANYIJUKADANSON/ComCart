@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
@@ -26,7 +27,16 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = RouteServiceProvider::HOME;
+    protected function authenticated(){
+        if(Auth::user()->role =='1'){
+            // if they have admin rights, redirect to admin dashboard page
+            return redirect('admin/dashboard')->with('message', 'Access denied, You have no Admin rights');
+        }else{
+            // if they dont have admin rights, redirect to home page
+            return redirect('/home')->with('message', 'Access denied, You have no Admin rights');
+        }
+    }
 
     /**
      * Create a new controller instance.
