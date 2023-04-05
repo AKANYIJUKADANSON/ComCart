@@ -1,4 +1,4 @@
-<p align="center"><a href="http://dantechx.apizy.com" target="_blank"><img src="https://drive.google.com/file/d/1YpMlmNGJ9Xs8XDBsUzuCwv8-VHV90fwa/view?usp=sharing" width="400" alt="ComCart Logo"></a></p>
+<p align="center"><a href="http://dantechx.epizy.com" target="_blank"><img src="https://drive.google.com/file/d/1YpMlmNGJ9Xs8XDBsUzuCwv8-VHV90fwa/view?usp=sharing" width="400" alt="ComCart Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
