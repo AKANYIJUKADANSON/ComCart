@@ -31,7 +31,7 @@ class LoginController extends Controller
     protected function authenticated(){
         if(Auth::user()->role =='1'){
             // if they have admin rights, redirect to admin dashboard page
-            return redirect('admin/dashboard')->with('message', 'Access denied, You have no Admin rights');
+            return redirect('admin/dashboard')->with('message', 'Welcome to the dashboard');
         }else{
             // if they dont have admin rights, redirect to home page
             return redirect('/home')->with('message', 'Access denied, You have no Admin rights');
